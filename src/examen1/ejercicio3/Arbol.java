@@ -41,8 +41,8 @@ public class Arbol {
     }
     void mostrarRec(Nodo nodoRaiz) {
         if (nodoRaiz != null) {
-            mostrarRec(nodoRaiz.izquierda);
             System.out.print(nodoRaiz.contenido + " ");
+            mostrarRec(nodoRaiz.izquierda);
             mostrarRec(nodoRaiz.derecha);
         }
     }

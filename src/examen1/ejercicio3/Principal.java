@@ -5,7 +5,7 @@ public class Principal {
     public static void main(String[] args) {
         Arbol arbol = new Arbol();
 
-        /*// Inserting elements
+        // Inserting elements
         arbol.insertar(50);
         arbol.insertar(30);
         arbol.insertar(20);
@@ -15,12 +15,12 @@ public class Principal {
         arbol.insertar(80);
 
         // Printing inorder traversal
-        arbol.mostrar();*/
+        arbol.mostrar();
 
-        arbol.insertar(4);
+        /*arbol.insertar(4);
         arbol.trazaEjecucion(4);
 
-        arbol.mostrar();
+        arbol.mostrar();*/
     }
 
 }
