@@ -17,6 +17,9 @@ public class Principal {
         // Printing inorder traversal
         arbol.mostrar();
 
+        arbol.test(arbol.raiz, 0, "");
+        //System.out.println("========>>" + res);
+
         /*arbol.insertar(4);
         arbol.trazaEjecucion(4);
 

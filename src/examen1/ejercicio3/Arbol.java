@@ -1,7 +1,9 @@
 package examen1.ejercicio3;
 
+import javax.management.remote.rmi._RMIConnection_Stub;
+
 public class Arbol {
-    private Nodo raiz;
+    public Nodo raiz;
 
     void insertar(int contenido) {
         this.raiz = insertarRec(this.raiz, contenido);
@@ -57,6 +59,15 @@ public class Arbol {
 
             trazaEjecucion(valor - 1);
         }
+    }
+
+    public void test(Nodo raiz, int contador, String datos) {
+        if (raiz != null) {
+            datos = datos + contador + "-" + raiz.contenido + ",";
+            test(raiz.izquierda, contador + 1, datos);
+            test(raiz.derecha, contador + 1, datos);
+        }
+        System.out.println("=============???>>>>" + datos);
     }
 
 }
